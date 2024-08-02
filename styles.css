@@ -1,0 +1,211 @@
+:root {
+  background: linear-gradient(90deg, #bb54bec7, #4189a5ce);
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.7rem;
+  background: -webkit-linear-gradient(200deg, #fb8cff, #72e3ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.8rem;
+}
+
+h2 {
+  font-size: 1.1rem;
+  margin-top: 0.8rem;
+  margin-bottom: 0;
+}
+
+nav {
+  position: relative;
+  display: flex;
+  padding: 1rem;
+  justify-content: flex-end;
+}
+
+ul li {
+  display: inline;
+  margin-left: 4rem;
+  margin-right: 1rem;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(136, 227, 255);
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+#primos-title {
+  font-size: 1.5rem;
+  text-align: center;
+  background: -webkit-linear-gradient(180deg, #ff9dd6, #5de7ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.primos-title-have,
+#fates-title-user-has {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#fates-title {
+  font-size: 1.2rem;
+}
+
+#primo-text {
+  background: -webkit-linear-gradient(180deg, #ff9dd6, #5de7ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#fates-swap {
+  background: -webkit-linear-gradient(180deg, #3ad8ff, #fa70ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#acquaint-text {
+  background: -webkit-linear-gradient(180deg, #99fffa, #5ac2ff, #3593ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#intertwined-img,
+#primo-main-img {
+  margin-left: 4rem;
+}
+
+#primo-img {
+  max-width: 5%;
+}
+
+#acquaint-img:hover,
+#intertwined-img:hover,
+#primo-main-img:hover {
+  cursor: pointer;
+}
+
+#input-intertwined,
+#input-primos {
+  padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+  width: 28%;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  align-self: end;
+}
+
+#input-intertwined:hover,
+#input-primos:hover,
+#input-intertwined:focus,
+#input-primos:focus {
+  outline: #df6ccf solid 2px;
+  caret-color: #23b9e7;
+}
+
+#main-content {
+  background-color: rgb(22, 21, 22);
+  margin-left: 35rem;
+  margin-right: 35rem;
+  padding: 1rem 5rem 5rem 5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 50px;
+  position: relative;
+  z-index: 1;
+}
+
+#calculate-button {
+  margin-top: 3rem;
+  padding: 0.5rem;
+  border-radius: 50px;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 21px;
+  color: rgb(51, 51, 51);
+  background: rgb(184, 227, 255);
+  width: 25%;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#calculate-button:hover,
+#calculate-button:focus {
+  background-color: #ffc7f8;
+  cursor: pointer;
+}
+
+#input-container-fates {
+  margin-top: 1rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.user-has-fates,
+.user-has-primos {
+  grid-column: 1;
+}
+
+#user-primos-calc {
+  margin-top: 2rem;
+}
+
+.fates-user-wants,
+.user-wants-primos {
+  grid-column: 2;
+}
+
+.fates-images {
+  margin-top: 2rem;
+}
+
+.want {
+  text-transform: uppercase;
+  background: -webkit-linear-gradient(180deg, #fdff90, #f9ffa7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.have {
+  text-transform: uppercase;
+  background: -webkit-linear-gradient(180deg, #ffaa90, #ffa7a7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+footer {
+  font-size: 0.7rem;
+  margin-top: 4rem;
+  font-weight: 500;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px; /* Adjust the height as needed BUT ITS NOT WORKING so maybe someone else can try*/
+}
+
+::-webkit-scrollbar-track {
+  background: #b2f3ff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffa1d0;
+  border-radius: 100px;
+}
