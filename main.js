@@ -5,11 +5,53 @@ const fateText = document.getElementById('fates-title');
 const fateTextForWhatUserHas = document.getElementById('fates-title-user-has');
 const primosCalc = document.getElementById('user-primos-calc');
 const fatesContainer = document.getElementById('input-container-fates');
+const calculateButton = document.getElementById('calculate-button');
 
 let isAcquaintImageClicked = false;
 let isPrimoImageClicked = false;
 let isIntertwinedImageClicked = true;
-let userFateInput = '';
+
+let userFateInput = 0;
+let userPrimoInput = 0;
+
+let fatesInputWant = document.getElementById('input-fates-want');
+let fatesInputHave = document.getElementById('input-fates-have');
+let primosInputHave = document.getElementById('input-primos-have');
+let primosInputWant = document.getElementById('input-primos-want');
+
+// alerting user to enter amounts if they click on calculate but there are no amounts entered
+
+calculateButton.addEventListener('click', function () {
+  if (
+    calculateButton == 'clicked' &&
+    userFateInputWant <= 0 &&
+    userFateInputHave <= 0
+  ) {
+    alert('Please enter a valid amount for both items.');
+  }
+});
+
+// want to do: if isIntertwinedImageClicked true, && fatesInputWant <= 0 && fatesInputHave <= 0
+
+// fatesInputWant.addEventListener('input', function () {
+//   userFateInput = parseInt(fatesInputWant.value) || 0;
+//   console.log('userFateInput:', userFateInput);
+// });
+
+// primosInputWant.addEventListener('input', function () {
+//   userPrimoInput = parseInt(primosInputWant.value) || 0;
+//   console.log('userPrimoInput:', userPrimoInput);
+// });
+
+// fatesInputHave.addEventListener('input', function () {
+//   userFateInput = parseInt(fatesInputHave.value) || 0;
+//   console.log('userFateInput:', userFateInput);
+// });
+
+// primosInputHave.addEventListener('input', function () {
+//   userPrimoInput = parseInt(primosInputHave.value) || 0;
+//   console.log('userPrimoInput:', userPrimoInput);
+// });
 
 function initializeStyles() {
   isAcquaintImageClicked = false;
@@ -122,5 +164,7 @@ primoImage.addEventListener('click', function () {
   changeFateStylesOnClick();
   changeFateText();
 });
+
+function alertUserToEnterAmount() {}
 
 window.onload = initializeStyles;

@@ -1,3 +1,24 @@
+html {
+  box-sizing: border-box;
+}
+
+:before,
+:after {
+  box-sizing: inherit;
+}
+
+embed,
+iframe,
+object {
+  max-width: 100%;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
 :root {
   background: linear-gradient(90deg, #bb54bec7, #4189a5ce);
 }
@@ -8,6 +29,7 @@ body {
   font-style: normal;
   color: white;
   text-align: center;
+  margin: 0;
 }
 
 h1 {
@@ -16,6 +38,7 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 0.8rem;
+  margin-top: 1.3rem;
 }
 
 h2 {
@@ -25,7 +48,7 @@ h2 {
 }
 
 nav {
-  position: relative;
+  position: absolute;
   display: flex;
   padding: 1rem;
   justify-content: flex-end;
@@ -99,8 +122,10 @@ a:hover {
   cursor: pointer;
 }
 
-#input-intertwined,
-#input-primos {
+#input-fates-have,
+#input-fates-want,
+#input-primos-have,
+#input-primos-want {
   padding: 0.5rem 0.8rem 0.5rem 0.8rem;
   width: 28%;
   border-radius: 50px;
@@ -113,10 +138,14 @@ a:hover {
   align-self: end;
 }
 
-#input-intertwined:hover,
-#input-primos:hover,
-#input-intertwined:focus,
-#input-primos:focus {
+#input-fates-have:hover,
+#input-fates-want:hover,
+#input-primos-have:hover,
+#input-primos-want:hover,
+#input-fates-have:focus,
+#input-fates-want:focus,
+#input-primos-have:focus,
+#input-primos-want:focus {
   outline: #df6ccf solid 2px;
   caret-color: #23b9e7;
 }
@@ -125,12 +154,14 @@ a:hover {
   background-color: rgb(22, 21, 22);
   margin-left: 35rem;
   margin-right: 35rem;
-  padding: 1rem 5rem 5rem 5rem;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  border-radius: 50px;
+  padding: 5rem 5rem 5rem;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
   position: relative;
-  z-index: 1;
+  z-index: 10;
+  top: 0;
 }
 
 #calculate-button {
@@ -141,10 +172,14 @@ a:hover {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 21px;
-  color: rgb(51, 51, 51);
+
   background: rgb(184, 227, 255);
   width: 25%;
   transition: background-color 0.3s ease-in-out;
+}
+
+#calculate-button a {
+  color: rgb(51, 51, 51);
 }
 
 #calculate-button:hover,
