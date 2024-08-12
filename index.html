@@ -26,66 +26,66 @@
         <img
           src="images/Item_Primogem.webp"
           alt="Intertwined Fate"
-          width="60px"
+          width="30px"
           id="primo-img"
         />
         <img
           src="images/Item_Primogem.webp"
           alt="Intertwined Fate"
-          width="60px"
+          width="30px"
           id="primo-img"
         />
         <img
           src="images/Item_Primogem.webp"
           alt="Intertwined Fate"
-          width="60px"
+          width="30px"
           id="primo-img"
         />
         <img
           src="images/Item_Primogem.webp"
           alt="Intertwined Fate"
-          width="60px"
+          width="30px"
           id="primo-img"
         />
         <img
           src="images/Item_Primogem.webp"
           alt="Intertwined Fate"
-          width="60px"
+          width="30px"
           id="primo-img"
         />
         <img
           src="images/Item_Primogem.webp"
           alt="Intertwined Fate"
-          width="60px"
+          width="30px"
           id="primo-img"
         />
         <img
           src="images/Item_Primogem.webp"
           alt="Intertwined Fate"
-          width="60px"
+          width="30px"
           id="primo-img"
         />
         <img
           src="images/Item_Primogem.webp"
           alt="Intertwined Fate"
-          width="60px"
+          width="30px"
           id="primo-img"
         /><img
           src="images/Item_Primogem.webp"
           alt="Intertwined Fate"
-          width="60px"
+          width="30px"
           id="primo-img"
         />
         <img
           src="images/Item_Primogem.webp"
           alt="Intertwined Fate"
-          width="60px"
+          width="30px"
           id="primo-img"
         />
         <img
           src="images/Item_Primogem.webp"
           alt="Intertwined Fate"
-          width="60px"
+          width="30px"
           id="primo-img"
         />
       </div>
@@ -98,6 +98,10 @@
               <span id="fates-swap"> Intertwined Fates</span>, or
               <span id="acquaint-text">Acquaint Fates</span> you already own and
               how many you would like to obtain to reach your goal.
+            </h2>
+            <h2>
+              Clicking Calculate will determine how many Primogems or Fates you
+              need to obtain based on your goal.
             </h2>
             <div class="fates-images">
               <img
@@ -125,7 +129,7 @@
                   <h3 id="fates-title-user-has"></h3>
                   <input
                     type="text"
-                    id="input-intertwined"
+                    id="input-fates-have"
                     placeholder="ex. 10"
                   />
                 </div>
@@ -133,7 +137,7 @@
                   <h3 id="fates-title"></h3>
                   <input
                     type="text"
-                    id="input-intertwined"
+                    id="input-fates-want"
                     placeholder="ex. 200"
                   />
                 </div>
@@ -145,7 +149,7 @@
                     <h3 class="primos-title-have">Primogems I Have:</h3>
                     <input
                       type="text"
-                      id="input-primos"
+                      id="input-primos-have"
                       placeholder="ex. 160"
                     />
                   </div>
@@ -153,7 +157,7 @@
                     <h3 id="primos-title">Primogems I Want:</h3>
                     <input
                       type="text"
-                      id="input-primos"
+                      id="input-primos-want"
                       placeholder="ex. 1600"
                     />
                   </div>
@@ -161,10 +165,18 @@
               </div>
             </div>
             <button id="calculate-button">
-              <a href="mytracker.html">Calculate!</a>
+              <a href="#">Calculate!</a>
             </button>
+            <p id="alert"></p>
+            <h2 id="result"></h2>
+          </div>
+          <div id="user-wants-to-log">
+            <h2>Would you like to log this entry into My Tracker to track your progress?</h2>
+            <button id="log-button">Log entry</button>
+            <!-- <button id="back-button">Go Back</button> -->
           </div>
         </section>
+      </section>
       </main>
       <footer>
         <p>
@@ -181,6 +193,6 @@
           HoyoVerse. For educational purposes and personal uses only.
         </p>
       </footer>
-    </section>
+    
   </body>
 </html>

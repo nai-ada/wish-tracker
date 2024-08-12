@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  height: 100%;
 }
 
 :before,
@@ -20,12 +21,14 @@ video {
 }
 
 :root {
-  background: linear-gradient(90deg, #bb54bec7, #4189a5ce);
+  /* background: linear-gradient(90deg, #bb54bec7, #4189a5ce); */
+  background-color: rgb(22, 21, 22);
+  background-image: url('images/genshin-impact-uhdpaper.com-4K-1.jpg');
+  background-size: cover;
 }
 
 body {
   font-family: 'Poppins', sans-serif;
-  font-weight: 700;
   font-style: normal;
   color: white;
   text-align: center;
@@ -33,18 +36,19 @@ body {
 }
 
 h1 {
-  font-size: 2.7rem;
+  font-size: 3.3rem;
   background: -webkit-linear-gradient(200deg, #fb8cff, #72e3ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: 0.8rem;
-  margin-top: 1.3rem;
+  margin-bottom: 1.2rem;
+  margin-top: 3rem;
 }
 
 h2 {
-  font-size: 1.1rem;
+  font-size: 18px;
   margin-top: 0.8rem;
   margin-bottom: 0;
+  font-weight: 500;
 }
 
 nav {
@@ -52,6 +56,12 @@ nav {
   display: flex;
   padding: 1rem;
   justify-content: flex-end;
+}
+
+#primo-text,
+#fates-swap,
+#acquaint-text {
+  font-weight: 700;
 }
 
 ul li {
@@ -151,9 +161,9 @@ a:hover {
 }
 
 #main-content {
-  background-color: rgb(22, 21, 22);
-  margin-left: 35rem;
-  margin-right: 35rem;
+  /* background-color: rgb(22, 21, 22); */
+  margin-left: 25rem;
+  margin-right: 25rem;
   padding: 5rem 5rem 5rem;
   padding-bottom: 2rem;
   padding-top: 1rem;
@@ -161,7 +171,6 @@ a:hover {
   margin-bottom: 0;
   position: relative;
   z-index: 10;
-  top: 0;
 }
 
 #calculate-button {
@@ -174,7 +183,7 @@ a:hover {
   font-size: 21px;
 
   background: rgb(184, 227, 255);
-  width: 25%;
+  width: 18%;
   transition: background-color 0.3s ease-in-out;
 }
 
@@ -227,13 +236,14 @@ a:hover {
 
 footer {
   font-size: 0.7rem;
-  margin-top: 4rem;
+  margin-top: auto;
   font-weight: 500;
+  padding-bottom: 1rem;
 }
 
 ::-webkit-scrollbar {
   width: 5px;
-  height: 5px; /* Adjust the height as needed BUT ITS NOT WORKING so maybe someone else can try*/
+  height: 5px;
 }
 
 ::-webkit-scrollbar-track {
@@ -244,3 +254,59 @@ footer {
   background: #ffa1d0;
   border-radius: 100px;
 }
+
+#alert {
+  font-size: 0.8rem;
+  font-weight: normal;
+  padding: 1rem;
+  color: rgb(255, 44, 185);
+}
+
+#result {
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+#log-button {
+  margin-top: 3rem;
+  padding: 0.5rem;
+  border-radius: 50px;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 21px;
+  width: 18%;
+  background-color: #e6c7ff;
+  transition: background-color 0.3s ease-in-out;
+  color: rgb(51, 51, 51);
+}
+
+#log-button:hover,
+#log-button:focus {
+  background: rgb(184, 255, 237);
+  cursor: pointer;
+}
+
+/* #back-button {
+  margin-top: 3rem;
+  padding: 0.5rem;
+  border-radius: 50px;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 21px;
+  width: 18%;
+  background-color: #ffc7e3;
+  transition: background-color 0.3s ease-in-out;
+  margin-left: 2rem;
+}
+
+#back-button a {
+  color: rgb(51, 51, 51);
+}
+
+#back-button:hover,
+#back-button:focus {
+  background: rgb(255, 254, 184);
+  cursor: pointer;
+} */
